@@ -14,9 +14,10 @@ class ProductController extends Controller
         return view('product.index', compact('products'));
     }
 
-    public function create()
+    public function create(Product $product)
     {
-        //
+
+        return view('product.create', compact('product'));
     }
 
     public function store(Request $request)
