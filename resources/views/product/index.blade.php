@@ -6,4 +6,6 @@
 
     <h1 class="text-center">Bienvenido a nuestra Tienda</h1>
 
+    @include('components.table')
+
 @endsection
