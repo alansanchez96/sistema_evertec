@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
 use App\Models\Product;
-use App\Models\Shop;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -22,11 +22,12 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        $shop = new Shop;
-        $shop->customer_name = $request->customer_name;
-        $shop->customer_email = $request->customer_email;
-        $shop->customer_mobile = $request->customer_mobile;
-        $shop->save();
+        $order = new Order;
+        $order->customer_name = $request->customer_name;
+        $order->customer_email = $request->customer_email;
+        $order->customer_mobile = $request->customer_mobile;
+        $order->status = 'CREATED';
+        $order->save();
     }
 
     public function show(Product $product)
