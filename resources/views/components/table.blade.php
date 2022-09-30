@@ -12,7 +12,7 @@
                 <tr>
                     <td>{{ $product->product_name }}</td>
                     <td>{{ $product->product_price }}</td>
-                    <td><a href="{{route('product.create', $product->id)}}">
+                    <td><a href="{{ route('product.show', $product->id) }}">
                             <button class="btn btn-success">Comprar</button>
                         </a>
                     </td>

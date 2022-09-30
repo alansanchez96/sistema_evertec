@@ -17,5 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::controller(ProductController::class)
     ->group(function(){
         Route::get('/products', 'index')->name('product.index');
-        Route::get('/product/{product}', 'create')->name('product.create');
+        Route::get('/product/crear-orden/{product}', 'show')->name('product.show');
+        Route::post('/product/crear-orden', 'store')->name('product.store');
     });

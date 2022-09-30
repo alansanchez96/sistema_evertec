@@ -1,4 +1,4 @@
-<form class="w-50 mx-auto mt-4">
+<form class="w-50 mx-auto mt-4" action="{{ route('product.store') }}" method="post">
     @csrf
     <div class="mb-3">
         <label for="name" class="form-label">Ingresa tu Nombre</label>

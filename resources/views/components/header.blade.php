@@ -3,10 +3,10 @@
 
         <div class="d-flex justify-content-between align-items-center w-100">
             <div>
-                <a href="#" class="navbar-brand text-success fw-bold">Evertec System</a>
+                <a href="{{ route('product.index') }}" class="navbar-brand text-success fw-bold">Evertec System</a>
             </div>
             <nav>
-                <a href="#" class="nav-link">Home</a>
+                <a href="{{ route('product.index') }}" class="nav-link">Home</a>
             </nav>
         </div>
 
